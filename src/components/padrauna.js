@@ -559,3 +559,4 @@ let arr = [ "Adhar Chhapra",
   "Vishunpur Vijaipur",
   "Vishunpura Buzurg"
 ]
+console.log(arr);

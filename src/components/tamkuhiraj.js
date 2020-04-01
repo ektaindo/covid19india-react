@@ -384,3 +384,5 @@ let arr = [  "Ahiraule",
   "Uttar Diha Sadashive Sahai",
   "Uttardiha Shabin Shahi"
 ]
+
+console.log(arr);

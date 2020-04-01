@@ -296,3 +296,4 @@ let arr = [ "Abhnayakpur",
   "Turk Walia Dariyao Singh",
   "Turkwalia"
 ]
+console.log(arr);

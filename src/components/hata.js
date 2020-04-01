@@ -404,3 +404,4 @@ let arr = [ "Adrauna",
   "Urdaha",
   "Waghra Deur"
 ]
+console.log(arr);
