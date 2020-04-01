@@ -58,10 +58,10 @@ function Home(props) {
           <div className="header-mid">
             <div className="titles">
               <h1>कोरोना जानकारी- कुशीनगर</h1>
-              <h6>आप सब के सहयोग से</h6>
+              <h6 style={{fontWeight: 600}}>आप सब के सहयोग से</h6>
             </div>
             <div className="last-update">
-              <h6>अंतिम अपडेट</h6>
+              <h6 style={{color: '#28a745', fontWeight: 600}}>अंतिम अपडेट</h6>
               <h3>
                 {isNaN(Date.parse(formatDate(lastUpdated)))
                   ? ''
