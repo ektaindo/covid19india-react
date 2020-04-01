@@ -103,7 +103,7 @@ function Table(props) {
   return (
     <>
       <h5 className="affected-count fadeInUp" style={{animationDelay: '1s'}}>
-        {count} प्रभावित राज्य/केंद्र शासित प्रदेश
+        {count} प्रभावित तहसील
       </h5>
       <table className="table fadeInUp" style={{animationDelay: '1s'}}>
         <thead>
@@ -113,7 +113,7 @@ function Table(props) {
               onClick={(e) => handleSort(e, props)}
             >
               <div className="heading-content">
-                <abbr title="State">राज्य/केंद्र शासित प्रदेश</abbr>
+                <abbr title="State">तहसील</abbr>
                 <div
                   style={{
                     display:

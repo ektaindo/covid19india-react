@@ -9,6 +9,7 @@ import * as Icon from 'react-feather';
 
 import './App.scss';
 import Home from './components/home';
+import India from './components/india';
 import Navbar from './components/navbar';
 import Links from './components/links';
 import Cluster from './components/cluster';
@@ -23,25 +24,31 @@ function App() {
     {
       pageLink: '/',
       view: Home,
-      displayName: 'Home',
+      displayName: 'कुशीनगर',
+      animationDelayForNavbar: 0.2,
+    },
+    {
+      pageLink: '/india',
+      view: India,
+      displayName: 'भारत',
       animationDelayForNavbar: 0.2,
     },
     {
       pageLink: '/clusters',
       view: Cluster,
-      displayName: 'Clusters',
+      displayName: 'क्लस्टर',
       animationDelayForNavbar: 0.3,
     },
     {
       pageLink: '/links',
       view: Links,
-      displayName: 'Helpful Links',
+      displayName: 'जरूरी लिंक',
       animationDelayForNavbar: 0.4,
     },
     {
       pageLink: '/faq',
       view: FAQ,
-      displayName: 'FAQ',
+      displayName: 'सामान्य प्रश्न',
       animationDelayForNavbar: 0.4,
     },
   ];

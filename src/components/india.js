@@ -2,13 +2,13 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import {formatDistance} from 'date-fns';
 import {formatDate} from '../utils/common-functions';
-import Table from './tablehome';
+import Table from './table';
 import Level from './level';
 import MapExplorer from './mapexplorer';
 import TimeSeries from './timeseries';
 import Minigraph from './minigraph';
 
-function Home(props) {
+function India(props) {
   const [states, setStates] = useState([]);
   const [stateDistrictWiseData, setStateDistrictWiseData] = useState({});
   const [fetched, setFetched] = useState(false);
@@ -57,7 +57,7 @@ function Home(props) {
         <div className="header fadeInUp" style={{animationDelay: '0.5s'}}>
           <div className="header-mid">
             <div className="titles">
-              <h1>कोरोना जानकारी- कुशीनगर</h1>
+              <h1>कोरोना जानकारी- भारत</h1>
               <h6>आप सब के सहयोग से</h6>
             </div>
             <div className="last-update">
@@ -145,4 +145,4 @@ function Home(props) {
   );
 }
 
-export default Home;
+export default India;
