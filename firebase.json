@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/addCovidPatient",
+        "function": "addCovidPatient"
+      },
+      {
+        "source": "/helloWorld",
+        "function": "helloWorld"
+      }
+    ]
+  }
+}
