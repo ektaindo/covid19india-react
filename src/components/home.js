@@ -61,15 +61,15 @@ function Home(props) {
               <h6 style={{fontWeight: 600}}>आप सब के सहयोग से</h6>
             </div>
             <div className="last-update">
-              <h6>अंतिम अपडेट</h6>
-              <h6 style={{color: '#28a745', fontWeight: 600}}>
+              <h6 style={{color: '#28a745', fontWeight: 600}}>अंतिम अपडेट</h6>
+              <h3>
                 {isNaN(Date.parse(formatDate(lastUpdated)))
                   ? ''
                   : formatDistance(
                       new Date(formatDate(lastUpdated)),
                       new Date()
                     ) + ' पहले'}
-              </h6>
+              </h3>
             </div>
           </div>
         </div>
@@ -85,7 +85,6 @@ function Home(props) {
           onHighlightDistrict={onHighlightDistrict}
         />
       </div>
-
       <div className="home-right">
         {fetched && (
           <React.Fragment>
