@@ -134,7 +134,10 @@ function ReportCaseForm() {
 
   return (
     <div className="plus-icon-wrap">
-      <PlusCircle onClick={openModal} />
+      <div className="tooltip">
+        <PlusCircle onClick={openModal} />
+        <span className="tooltiptext">Add patients Data</span>
+      </div>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
