@@ -85,7 +85,6 @@ function Home(props) {
           onHighlightDistrict={onHighlightDistrict}
         />
       </div>
-
       <div className="home-right">
         {fetched && (
           <React.Fragment>

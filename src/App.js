@@ -17,6 +17,7 @@ import Cluster from './components/cluster';
 import FAQ from './components/faq';
 import Banner from './components/banner';
 /* import PatientDB from './components/patientdb';*/
+import ReportCaseForm from './components/ReportForm/index';
 
 const history = require('history').createBrowserHistory;
 
@@ -81,6 +82,7 @@ function App() {
                   );
                 })}
               </Switch>
+              <ReportCaseForm />
             </div>
           )}
         />
