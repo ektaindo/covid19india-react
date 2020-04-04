@@ -102,7 +102,7 @@ function ReportCaseForm() {
       date,
     };
     axios.post(
-      'https://us-central1-coronaquit.cloudfunctions.net/addCovidPatient',
+      'https://coronaquit.web.app/addCovidPatient',
       params
     );
   };

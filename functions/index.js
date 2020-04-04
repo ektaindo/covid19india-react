@@ -24,12 +24,18 @@ exports.helloWorldPost = functions.https.onRequest((request, response) => {
  });
 
 exports.addCovidPatient = functions.https.onRequest((request, response) => {
- let name = request.body.name;
- let tehsil = request.body.tehsil;
- let village = request.body.village;
- let age = request.body.age;
- let cat = request.body.category;
- response.send({data:'done'});
+  // cors(req, res, () => {
+   let body = request.body.name;
+   let {name, tehsil, village, age, date, category} = body;
+   let uId = util.uuidv4()
+   firestoredb.collection('patients/doc/'+tehsil).doc(uId).set({name, tehsil, village, age, category, uId, date})
+   .then((data)=>{
+     response.send({data:'done'});
+   })
+   .catch((e)=>{
+     response.send({data:'error', error:e});
+   })
+  // })
  });
 
 
