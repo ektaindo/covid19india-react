@@ -27,3 +27,4 @@ yarn-debug.log*
 yarn-error.log*
 .firebaserc
 functions/coronaquit.json
+.firebase
