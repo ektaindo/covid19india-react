@@ -45,19 +45,19 @@ function App() {
       pageLink: '/clusters',
       view: Cluster,
       displayName: 'क्लस्टर',
-      animationDelayForNavbar: 0.3,
+      animationDelayForNavbar: 0.4,
     },
     {
       pageLink: '/links',
       view: Links,
       displayName: 'जरूरी लिंक',
-      animationDelayForNavbar: 0.4,
+      animationDelayForNavbar: 0.5,
     },
     {
       pageLink: '/faq',
       view: FAQ,
       displayName: 'सामान्य प्रश्न',
-      animationDelayForNavbar: 0.4,
+      animationDelayForNavbar: 0.6,
     },
   ];
 
