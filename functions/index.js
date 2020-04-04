@@ -24,18 +24,18 @@ exports.helloWorldPost = functions.https.onRequest((request, response) => {
  });
 
 exports.addCovidPatient = functions.https.onRequest((request, response) => {
-  // cors(req, res, () => {
-   let body = request.body.name;
-   let {name, tehsil, village, age, date, category} = body;
-   let uId = util.uuidv4()
-   firestoredb.collection('patients/doc/'+tehsil).doc(uId).set({name, tehsil, village, age, category, uId, date})
-   .then((data)=>{
-     response.send({data:'done'});
-   })
-   .catch((e)=>{
-     response.send({data:'error', error:e});
-   })
-  // })
+  cors(req, res, () => {
+     let body = request.body.name;
+     let {name, tehsil, village, age, date, category} = body;
+     let uId = util.uuidv4()
+     firestoredb.collection('patients/doc/'+tehsil).doc(uId).set({name, tehsil, village, age, category, uId, date})
+     .then((data)=>{
+       response.send({data:'done'});
+     })
+     .catch((e)=>{
+       response.send({data:'error', error:e});
+     })
+  })
  });
 
 
